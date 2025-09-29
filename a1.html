@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>Employee class and object</h1> 
+<p id="e1"></p>
+<p id="e2"></p>
+<script>
+    class Employee{
+        constructor(name,age,salary){
+            this.name=name;
+              this.age = age;
+                this.salary = salary;
+        }
+    }
+    e1=new Employee("John",30,45000)
+     e2 = new Employee("Mark", 35, 100000)
+     document.getElementById("e1").innerHTML="Employee 1 name is " +e1.name+" and age is "+e1.age+" and salary is " +e1.salary;
+     document.getElementById("e2").innerHTML = "Employee 2 name is " + e2.name + " and age is " + e2.age + " and salary is " + e2.salary;
+</script>
+</body>
+</html>
